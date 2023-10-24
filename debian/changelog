@@ -1,5 +1,53 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-read-only-stream (2.0.0-6) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-read-only-stream: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 14:18:22 +0000
+
+node-read-only-stream (2.0.0-5) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Mon, 11 Oct 2021 09:03:05 +0200
+
+node-read-only-stream (2.0.0-4) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-concat-stream,
+      node-readable-stream, node-tap, node-tape, node-through, node-through2 and
+      nodejs.
+    + node-read-only-stream: Drop versioned constraint on node-readable-stream
+      and nodejs in Depends.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Fri, 24 Sep 2021 01:55:56 +0100
+
+node-read-only-stream (2.0.0-3) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Bump policy and debhelper (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 20 Sep 2019 17:50:48 +0200
+
+node-read-only-stream (2.0.0-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat (no changes)
+  * Move to section javascript
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 03 Jun 2018 22:06:27 +0200
+
+node-read-only-stream (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #864689)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 11 Aug 2017 22:59:28 +0200
